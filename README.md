@@ -1,2 +1,2 @@
 # wordcloud
-Wordcloud for kakaotalk logs of geekhub
+Wordcloud for kakaotalk chat logs
