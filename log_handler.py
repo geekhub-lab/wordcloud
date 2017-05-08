@@ -14,7 +14,7 @@ def find_log_file():
     else:
         chat_log_file = args[1]
         if not os.path.isfile(chat_log_file):
-            raise FileNotFoundError(f('{chat_log_file} is not found'))
+            raise FileNotFoundError(f'{chat_log_file} is not found')
     return chat_log_file
 
 
