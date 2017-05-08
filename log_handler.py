@@ -34,7 +34,7 @@ def get_log_reader(log_file: str) -> Iterable[Dict[str, str]]:
     return reader
 
 
-def get_user_log_string(log: Dict[str, List[str]]) -> str:
+def convert_user_log_to_string(log: Dict[str, List[str]]) -> str:
     """"Convert the user log list to a string.
 
     Args:
@@ -43,7 +43,7 @@ def get_user_log_string(log: Dict[str, List[str]]) -> str:
     return ' '.join(log['user_log'])
 
 
-def get_message_log_string(log: Dict[str, List[str]]) -> str:
+def convert_message_log_to_string(log: Dict[str, List[str]]) -> str:
     """"Convert the message log list to a string.
 
     Args:

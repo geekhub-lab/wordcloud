@@ -19,8 +19,8 @@ if __name__ == '__main__':
     log_reader = lh.get_log_reader(chat_log_file)
     log_data = lh.read_all_log(log_reader)
 
-    user_log_string = lh.get_user_log_string(log_data)
-    message_log_string = lh.get_message_log_string(log_data)
+    user_log_string = lh.convert_user_log_to_string(log_data)
+    message_log_string = lh.convert_message_log_to_string(log_data)
 
     make_wordcloud(user_log_string)
     make_wordcloud(message_log_string)
