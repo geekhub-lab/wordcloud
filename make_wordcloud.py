@@ -7,7 +7,7 @@ default_wordcloud = WordCloud(width=1080,
                               font_path='fonts/NanumGothic.ttf')
 
 
-def make_whole_wordcloud(chat_log_text: str) -> None:
+def make_wordcloud(chat_log_text: str) -> None:
     wordcloud = default_wordcloud.generate(chat_log_text)
     image = wordcloud.to_image()
     image.show()
@@ -22,5 +22,5 @@ if __name__ == '__main__':
     user_log_string = lh.get_user_log_string(log_data)
     message_log_string = lh.get_message_log_string(log_data)
 
-    make_whole_wordcloud(user_log_string)
-    make_whole_wordcloud(message_log_string)
+    make_wordcloud(user_log_string)
+    make_wordcloud(message_log_string)
